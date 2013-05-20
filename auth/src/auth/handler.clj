@@ -89,6 +89,8 @@
       (-> (response/redirect "/login")
         (assoc-in [:session] session)))))
 
+(def auth)
+
 (defn auth-req2 [req]
   (println "auth-req2 -----------------")
   (println req)
